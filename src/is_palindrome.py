@@ -1,4 +1,4 @@
-def is_palindrome(value):
+def is_palindrome(texto):
     texto = texto.lower()
     reemplazos = {
         'á': 'a', 'é': 'e', 'í': 'i', 'ó': 'o', 'ú': 'u',
@@ -14,3 +14,11 @@ def is_palindrome(value):
 
     texto_final = ''.join(texto_limpio)
     return texto_final == texto_final[::-1]
+
+# Entrada y salida
+entrada = input("Ingrese una palabra o frase: ")
+if is_palindrome(entrada):
+    print("Es un palíndromo")
+else:
+    print("No es un palíndromo")
+
